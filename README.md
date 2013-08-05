@@ -1,4 +1,3 @@
-After a few changes
 
 == README
 
