@@ -1,6 +1,6 @@
 class Owner
 	def name
-		name = 'Seema'
+		name = 'skilledar'
 	end
 	def birthdate
 		birthdate = Date.new(1973, 8, 8)
