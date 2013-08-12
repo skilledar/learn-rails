@@ -9,10 +9,15 @@ class Owner
 		today = Date.today
 		birthday = Date.new(today.year, self.birthdate.month, self.birthdate.day)
 		countdown = (birthday - today).to_i
+		print "The value is #{countdown}"
+		c = countdown
+		
 		if countdown == 0
-			countdown = "0"
+			c = "0"
 		elsif countdown < 0
-			countdown = 365 + countdown 
+			c = 365 + countdown
 		end
+
+		return c
 	end
 end
