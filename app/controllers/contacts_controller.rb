@@ -5,6 +5,7 @@ class ContactsController < ApplicationController
 	def create
 		@contact = Contact.new(secure_params)
 		if @contact.valid?
+			@contact.update_spreadsheet
 			# TODO save data
 			# TODO send message
 			flash[:notice] = "Message sent from #{@contact.name}."
